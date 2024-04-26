@@ -1,0 +1,19 @@
+// 햄버거
+.menuToggle {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.svgBox {
+  width: 20px;
+  height: 20px;
+}

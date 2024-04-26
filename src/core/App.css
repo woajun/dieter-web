@@ -1,0 +1,25 @@
+html {
+  overflow: hidden !important;
+}
+
+body {
+  position: fixed;
+  overflow: hidden !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+p {
+  margin: 0;
+}

@@ -1,0 +1,198 @@
+/* Navigation.module.scss */
+
+.navigation {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: white;
+  border-bottom-color: rgb(231, 231, 231);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.navigationWrapper {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1180px;
+  height: 90px;
+  padding: 0 15px;
+
+  @media (max-width: 768px) {
+    height: 48px;
+  }
+}
+
+.logo {
+  width: 0;
+  height: 100%;
+  position: relative;
+  a {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    img {
+      height: 1.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    position: unset;
+    width: auto;
+    a {
+      position: unset;
+    }
+  }
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menuUl {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menuLi {
+  padding: 0 37px;
+  position: relative;
+}
+
+.menuLi:hover > ul {
+  display: block;
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: rgb(112, 110, 110);
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menuLink:hover {
+  color: rgb(185, 184, 184);
+}
+
+.activeLink {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #4f76f5;
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.activeLink:hover {
+  color: #a0b4fd;
+}
+
+.subMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #252b3f;
+  width: 100%;
+  border: 1px solid #ccc;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuLi:hover .subMenu {
+  display: block;
+}
+
+.subMenu li:hover {
+  background-color: #4f76f5;
+}
+
+.subMenu a {
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.subMenu a:hover {
+  color: white;
+}
+
+.language {
+  position: relative;
+  height: 100%;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.languageButton {
+  position: absolute;
+  right: 0;
+  padding-right: 1rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  span {
+    font-size: 14px;
+    color: rgb(119, 119, 119);
+  }
+  svg {
+    width: 14px;
+    color: rgb(119, 119, 119);
+  }
+}
+
+.languageButton:hover .subLanguageUl {
+  display: block;
+}
+
+.subLanguageUl {
+  position: absolute;
+  top: 100%;
+  display: none;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(231, 231, 231);
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.176) 0px;
+
+  li {
+    padding: 0.5rem 1rem;
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    border-color: rgb(229, 231, 235);
+    border-width: 1px;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  li:hover {
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+  }
+}

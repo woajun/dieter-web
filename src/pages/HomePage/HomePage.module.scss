@@ -1,0 +1,24 @@
+.homeBackground {
+  background-image: url('/src/assets/images/home-background.jpg');
+  margin-top: 48px;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+.searchBarContainer {
+  padding-bottom: 1rem;
+}
+.searchBarBox {
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.contentsContainer {
+  background-color: white;
+  border-radius: 20px;
+}
