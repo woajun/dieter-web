@@ -1,6 +1,8 @@
 import styles from "./Download.module.scss";
 import { Button } from "@mui/material";
 import { Text } from "../../../components/Text";
+import Phone1 from "/src/assets/images/phone1.png";
+import Phone2 from "/src/assets/images/phone2.png";
 
 export const Download = () => {
   return (
@@ -27,18 +29,10 @@ export const Download = () => {
         <div className={styles.imageSection}>
           <div className={styles.imageContainer}>
             <div className={styles.image1Box}>
-              <img
-                src="/src/assets/images/phone1.png"
-                className={styles.image1}
-                alt=""
-              />
+              <img src={Phone1} className={styles.image1} alt="" />
             </div>
             <div className={styles.image2Box}>
-              <img
-                src="/src/assets/images/phone2.png"
-                className={styles.image2}
-                alt=""
-              />
+              <img src={Phone2} className={styles.image2} alt="" />
             </div>
           </div>
         </div>
