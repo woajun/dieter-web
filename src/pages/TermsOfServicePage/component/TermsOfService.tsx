@@ -1,19 +1,41 @@
 import { ReactNode } from "react";
 import { Text } from "../../../components/Text";
+import styles from "./TermsOfService.module.scss";
 
 const H1 = ({ children }: { children: ReactNode }) => {
-  return <Text>{children}</Text>;
+  return (
+    <div className={styles.h1}>
+      <br />
+      <Text size={26} bold>
+        {children}
+      </Text>
+      <br />
+      <br />
+    </div>
+  );
 };
 const H2 = ({ children }: { children: ReactNode }) => {
-  return <Text>{children}</Text>;
+  return (
+    <div className={styles.h2}>
+      <br />
+      <Text bold>{children}</Text>
+      <br />
+      <br />
+    </div>
+  );
 };
 const P = ({ children }: { children: ReactNode }) => {
-  return <Text>{children}</Text>;
+  return (
+    <div className={styles.p}>
+      <Text color="#363636">{children}</Text>
+      <br />
+      <br />
+    </div>
+  );
 };
 const EmptyLine = () => {
-  return <div />;
+  return <br />;
 };
-
 export const TermsOfService = () => {
   return (
     <div>

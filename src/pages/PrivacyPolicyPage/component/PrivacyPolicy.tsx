@@ -1,17 +1,40 @@
 import { ReactNode } from "react";
 import { Text } from "../../../components/Text";
+import styles from "./PrivacyPolicy.module.scss";
 
 const H1 = ({ children }: { children: ReactNode }) => {
-  return <Text>{children}</Text>;
+  return (
+    <div className={styles.h1}>
+      <br />
+      <Text size={26} bold>
+        {children}
+      </Text>
+      <br />
+      <br />
+    </div>
+  );
 };
 const H2 = ({ children }: { children: ReactNode }) => {
-  return <Text>{children}</Text>;
+  return (
+    <div className={styles.h2}>
+      <br />
+      <Text bold>{children}</Text>
+      <br />
+      <br />
+    </div>
+  );
 };
 const P = ({ children }: { children: ReactNode }) => {
-  return <Text>{children}</Text>;
+  return (
+    <div className={styles.p}>
+      <Text color="#363636">{children}</Text>
+      <br />
+      <br />
+    </div>
+  );
 };
 const EmptyLine = () => {
-  return <div />;
+  return <br />;
 };
 
 export const PrivacyPolicy = () => {
@@ -359,6 +382,7 @@ export const PrivacyPolicy = () => {
         고지합니다.본 개인정보처리방침은 2024년 3월 20일부터 적용되고,
         종전의개인정보처리방침은 본 개인정보처리방침으로 대체됩니다.
       </P>
+      <EmptyLine />
       <P>- 공고일자: 2024년 4월 26일</P>
       <P>- 시행일자: 2024년 4월 26일</P>
     </div>
