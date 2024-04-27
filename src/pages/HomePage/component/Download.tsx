@@ -28,14 +28,14 @@ export const Download = () => {
           <div className={styles.imageContainer}>
             <div className={styles.image1Box}>
               <img
-                src="/src/assets/images/phone4.png"
+                src="/src/assets/images/phone1.png"
                 className={styles.image1}
                 alt=""
               />
             </div>
             <div className={styles.image2Box}>
               <img
-                src="/src/assets/images/phone3.png"
+                src="/src/assets/images/phone2.png"
                 className={styles.image2}
                 alt=""
               />
