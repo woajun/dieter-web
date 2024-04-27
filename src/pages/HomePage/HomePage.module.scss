@@ -1,24 +1,67 @@
-.homeBackground {
-  background-image: url('/src/assets/images/home-background.jpg');
-  margin-top: 48px;
-  background-position-x: 50%;
-  background-position-y: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+.background {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  gap: 3rem;
+  padding: 4rem 0;
+  max-width: 1024px;
+}
+.titleSection {
+  flex:1;
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem;
+  justify-content: center;
+  gap: 10px;
 }
-.searchBarContainer {
-  padding-bottom: 1rem;
+.title1 {
+
 }
-.searchBarBox {
-  background-color: white;
-  border-radius: 20px;
-  padding: 1rem;
+.title2 {
+
+}
+.title3 {
+
+}
+.downloadSection {
+
+}
+.iosDownload {
+
+}
+.imageSection {
+flex: 1;
+}
+.imageContainer {
+  display: flex;
+  align-items: center;
 }
 
-.contentsContainer {
-  background-color: white;
-  border-radius: 20px;
+.image1Box {
+  position: relative;
+}
+
+.image1Box:before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 500px;
+  width: 500px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: #ff3e66;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.image1 {
+  width: 300px;
+}
+.image2Box {
+  
+}
+.image2 {
+  width: 150px;
 }
