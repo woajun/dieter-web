@@ -1,6 +1,6 @@
 import styles from "./Navigation.module.scss";
 import { useLocation } from "react-router-dom";
-import { ReactNode } from "react";
+import { CSSProperties, ReactNode } from "react";
 import { Hamburger } from "./Hamburger";
 import { DownSvg } from "../../assets/svgs/DownSvg";
 import { KoreaSvg } from "../../assets/svgs/KoreaSvg";
@@ -38,7 +38,11 @@ export type MenuItem = {
   }[];
 };
 
-export const Navigation = () => {
+type Props = {
+  style?: CSSProperties;
+};
+
+export const Navigation = ({ style }: Props) => {
   const menuItems: MenuItem[] = [
     { text: "About", to: "/about" },
     { text: "Service", to: "/service" },
@@ -64,7 +68,7 @@ export const Navigation = () => {
   ];
 
   return (
-    <nav className={styles.navigation}>
+    <nav className={styles.navigation} style={style}>
       <div className={styles.navigationWrapper}>
         <Hamburger menuItems={menuItems} />
 
