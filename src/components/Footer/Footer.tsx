@@ -13,6 +13,13 @@ export const Footer = () => {
           <Link color="inherit" underline="none" href="/terms-of-service">
             이용약관
           </Link>
+          <Link
+            color="inherit"
+            underline="none"
+            href="https://forms.gle/rkqGSnoudGp1YUhn6"
+          >
+            고객센터
+          </Link>
         </div>
         <div className={styles.labelBox}>
           <Text bold>다이어터(DIETER)</Text>
